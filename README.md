@@ -80,7 +80,7 @@ esptool.py --chip esp32c6 --port <PORT> --baud 921600 write_flash \
   0x10000 firmware.bin
 ```
 
-> Les offsets ci-dessus sont ceux par défaut pour l'ESP32-C6. En cas de doute, vérifie-les dans les logs de build de la release concernée.
+> Les offsets ci-dessus sont ceux par défaut pour l'ESP32-C6. Vérifiez-les dans les logs de build de la release concernée.
 
 Après le flash, l'appareil redémarre en mode BLE (publicité sous le nom `Wanit SC`) s'il n'a pas encore été provisionné.
 
