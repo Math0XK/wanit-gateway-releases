@@ -66,7 +66,7 @@ pip install esptool
 Un seul fichier, une seule commande :
 
 ```
-esptool.py --chip esp32c6 --port <PORT> --baud 921600 write_flash 0x0 esp32-ble-wifi-uart-bridge-full.bin
+python -m esptool --chip esp32c6 --port <PORT> --baud 921600 write-flash 0x0 "<chemin d'accès>\esp32-ble-wifi-uart-bridge-full.bin"
 ```
 
 Remplace `<PORT>` par le port série de l'appareil (ex. `COM5` sur Windows, `/dev/ttyUSB0` sur Linux/macOS).
