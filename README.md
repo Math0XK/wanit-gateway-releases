@@ -61,7 +61,7 @@ Toutes les versions sont disponibles dans l'onglet [**Releases**](https://github
 pip install esptool
 ```
 
-### Option A — image complète (recommandé)
+### image complète
 
 Un seul fichier, une seule commande :
 
@@ -70,17 +70,6 @@ python -m esptool --chip esp32c6 --port <PORT> --baud 921600 write-flash 0x0 "<c
 ```
 
 Remplace `<PORT>` par le port série de l'appareil (ex. `COM5` sur Windows, `/dev/ttyUSB0` sur Linux/macOS).
-
-### Option B — images séparées
-
-```
-esptool.py --chip esp32c6 --port <PORT> --baud 921600 write_flash \
-  0x0     bootloader.bin \
-  0x8000  partitions.bin \
-  0x10000 firmware.bin
-```
-
-> Les offsets ci-dessus sont ceux par défaut pour l'ESP32-C6. Vérifiez-les dans les logs de build de la release concernée.
 
 Après le flash, l'appareil redémarre en mode BLE (publicité sous le nom `Wanit SC`) s'il n'a pas encore été provisionné.
 
