@@ -51,7 +51,7 @@ Toutes les versions sont disponibles dans l'onglet [**Releases**](https://github
 | `INTEGRATION_GUIDE_FR.md` / `INTEGRATION_GUIDE_EN.md` | Guides d'intégration côté application cliente |
 | `PATCH_NOTES_*.md` | Notes de version |
 
-> Lefichiers firmware.bin, bootloader.bin et partitions.bin **ne sont plus disponible** séparément depuis la **v1.2.0**.
+> Les fichiers firmware.bin, bootloader.bin et partitions.bin **ne sont plus disponible** séparément depuis la **v1.2.0**.
 
 ---
 
