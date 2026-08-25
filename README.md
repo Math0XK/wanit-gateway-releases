@@ -16,7 +16,7 @@ Firmware compilé pour le **Wanit Gateway**, un pont ESP32-C6 entre BLE/Wi-Fi et
 - **Bascule automatique BLE → HTTP** une fois le Wi-Fi provisionné, avec reconnexion automatique en cas de coupure.
 - **Pont UART sur HTTP** : envoi/réception de trames vers le microcontrôleur connecté, avec découverte réseau via mDNS.
 - **Canal brut (raw) pour mises à jour STM32** : transfert binaire transparent UART ↔ HTTP/BLE, pour piloter un bootloader STM32 directement depuis une application cliente.
-- **Mise à jour du firmware ESP32 à distance (OTA)** *(depuis v2.0.0)* : envoi de l'image depuis l'application, en HTTP (`POST /ota/upload`) ou en BLE, sans accès physique à l'appareil. Images signées (ECDSA P-256/SHA-256), double emplacement applicatif avec retour arrière automatique en cas d'échec — aucun risque de brique.
+- **Mise à jour du firmware ESP32 à distance (OTA)** *(depuis v2.0.0)* : envoi de l'image depuis l'application, en HTTP (`POST /ota/upload`) ou en BLE, sans accès physique à l'appareil. Images signées (ECDSA P-256/SHA-256), double emplacement applicatif avec retour arrière automatique en cas d'échec empêchant ainsi tout risque de brique.
 - **Authentification HTTP optionnelle** par jeton (`X-Auth-Token`).
 
 Le détail complet du protocole (commandes, formats de trame, machine d'état) est fourni dans la documentation jointe à chaque release.
