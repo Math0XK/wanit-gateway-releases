@@ -78,7 +78,7 @@ Remplace `<PORT>` par le port série de l'appareil (ex. `COM5` sur Windows, `/de
 
 Après le flash, l'appareil redémarre en mode BLE (publicité sous le nom `Wanit SC`) s'il n'a pas encore été provisionné.
 
-> ⚠️ **Migration vers v2.0.0** : la table de partitions change avec cette version. Un appareil déjà déployé en v1.2.x ou antérieur **ne peut pas** recevoir la v2.0.0 par OTA — un dernier flash par câble (`esp32-ble-wifi-uart-bridge-full.bin`) est obligatoire, une seule fois. Les identifiants Wi-Fi, l'UID, le nom et le token d'authentification sont conservés. Voir `PATCH_NOTES_v2.0.0.md` pour le détail.
+> **Migration vers v2.0.0** : la table de partitions change avec cette version. Un appareil déjà déployé en v1.2.x ou antérieur **ne peut pas** recevoir la v2.0.0 par OTA — un dernier flash par câble (`esp32-ble-wifi-uart-bridge-full.bin`) est obligatoire, une seule fois. Les identifiants Wi-Fi, l'UID, le nom et le token d'authentification sont conservés. Voir `PATCH_NOTES_v2.0.0.md` pour le détail.
 
 ### Mises à jour suivantes : par OTA (HTTP ou BLE)
 
