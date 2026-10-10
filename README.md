@@ -60,13 +60,21 @@ Toutes les versions sont disponibles dans l'onglet [**Releases**](https://github
 
 ## Flasher le firmware
 
-### Prérequis
+### Le plus simple : Wanit Gateway Flasher (Windows)
+
+**[⬇ Télécharger WanitGatewayFlasher.exe](https://github.com/Math0XK/wanit-gateway-flasher/releases/latest/download/WanitGatewayFlasher.exe)**
+
+Utilitaire graphique sans installation : il détecte la carte, propose la dernière release de ce dépôt (ou une autre version, ou un fichier local) et la flashe en un clic. Détails et aide : [wanit-gateway-flasher](https://github.com/Math0XK/wanit-gateway-flasher).
+
+### En ligne de commande
+
+#### Prérequis
 
 ```
 pip install esptool
 ```
 
-### image complète
+#### Image complète
 
 Un seul fichier, une seule commande :
 
